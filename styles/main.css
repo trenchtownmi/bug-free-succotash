@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+/* Header */
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logo {
+}
+
+.logo-content {
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-left: 10px;
+}
+
+.header-nav {
+  margin-left: 32px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #18191f;
+
+  transition: 0.1s ease;
+  margin-bottom: 5px;
+}
+
+.header-nav a:hover {
+  opacity: 0.6;
+}
+
+.header-nav a:not(:last-child) {
+  margin-right: 0px;
+}
+
+.header-btn {
+  margin-top: 30px;
+  display: flex;
+  /* margin-left: auto; */
+}
+
+.header-btn a {
+  margin-left: 15px;
+}
+
+@media (min-width: 505px) {
+  .header-nav {
+    margin-left: 32px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.43;
+    display: flex;
+
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 454px) {
+  .header-btn {
+    margin-top: -1px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-nav a:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .header-nav {
+    display: block;
+  }
+  .header-btn {
+    margin-top: 0px;
+  }
+  .header-wrap {
+    justify-content: space-between;
+  }
+}
+
+/* Main Page */
+
+.main-page {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.main-page-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-page__content {
+  max-width: 540px;
+}
+
+.main-page__content h1 {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 1.36;
+  color: #18191f;
+  text-align: center;
+}
+
+.main-page__content p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.78;
+  font-weight: 400;
+  color: #18191f;
+}
+
+.main-btn {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.btn {
+  padding: 1em 2em;
+  background: #8c30f5;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.main-page__photo {
+  margin-right: -12px;
+}
+
+@media (min-width: 700px) {
+  .main-page__content h1 {
+    font-size: 72px;
+  }
+  .main-page__content p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .main-page__content h1 {
+    text-align: left;
+  }
+  .main-page__content p {
+    text-align: left;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .main-page-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .main-page {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .main-btn {
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #000;
+  color: aliceblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-content-title {
+  color: #d9dbe1;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 15px;
+}
+.footer-content-socials a:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media (min-width: 500px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
